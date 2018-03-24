@@ -1,0 +1,83 @@
+\documentclass{article}
+\usepackage[letterpaper, landscape, tmargin=0.5in, lmargin=0.2in, rmargin=0.2in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{graphicx, booktabs, adjustbox, moresize, anyfontsize, inconsolata}
+\renewcommand{\familydefault}{\ttdefault}
+\pagenumbering{gobble}
+\definecolor{blue}{HTML}{0000FF}
+\definecolor{yellow}{HTML}{FFFF00}
+\definecolor{red}{HTML}{FF0000}
+\begin{document}
+\fontsize{30}{36}\selectfont
+% \vspace{1in}
+% \centering
+% % \HUGE
+\begin{minipage}{0.5\textwidth}
+\centering
+\fontsize{40}{48}\selectfont
+\begin{tabular}[t]{ll}
+\multicolumn{2}{c}{\textbf{*Exceptions}} \\
+\toprule
+S                 & .    \\ \midrule
+CAN BC          & \cellcolor{blue}   \\
+ID 836-837      & \cellcolor{red}    \\
+MI 498-499      & \cellcolor{red}    \\
+ND 5652         & \cellcolor{yellow} \\
+TX3 768/9, 89 & \cellcolor{red}    \\
+TX3 797-799   & \cellcolor{red}    \\
+WY 828-831      & \cellcolor{red}    \\
+WY3 821/4/7   & \cellcolor{blue}  \\ \bottomrule
+\end{tabular}
+\end{minipage}
+\begin{minipage}{0.5\textwidth}
+% \centering
+\fontsize{30}{36}\selectfont
+\begin{tabular}[t]{ll}
+\multicolumn{2}{c}{Minn} \\
+\toprule
+SLIC                 & .    \\ \midrule
+MN 5519 & \cellcolor{blue}   \\
+MN 5549 & \cellcolor{blue}   \\
+MN      & \cellcolor{yellow} \\ \bottomrule
+\end{tabular}
+\hspace{0.1cm}
+\begin{tabular}[t]{ll}
+\multicolumn{2}{c}{INTL} \\
+\toprule
+S                 & .    \\ \midrule
+CAN* & \cellcolor{red}  \\
+MEX  & \cellcolor{blue} \\
+PRI  & \cellcolor{red} \\ \bottomrule
+\end{tabular}
+\vspace{1ex}
+
+\begin{tabular}[t]{l|ll|l|l}
+\multicolumn{5}{c}{\textbf{Flex}} \\
+\toprule
+SLIC    & CITY  & .                   & .                   &    .             \\ \midrule
+MN 5519 & STPMN & \cellcolor{blue}   & \cellcolor{red}    &                 \\
+MN 5549 & MINMN & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{red} \\
+MN 5580 & DULMN & \cellcolor{yellow} & \cellcolor{red}    &                 \\
+MN 5590 & ROCMN & \cellcolor{yellow} & \cellcolor{red}    &                 \\
+MN 5599 & MGRMN & \cellcolor{yellow} & \cellcolor{red}    &                 \\ \bottomrule
+\end{tabular}
+\end{minipage}
+
+
+% \begin{tabular}[t]{lll}
+% \multicolumn{3}{c}{\textbf{Hots}}                                          
+% \toprule
+% S                 & D   & T     \\ \midrule
+% WI 530-543        & 87  & 21:10 \\
+% WI 549            & 87  & 21:10 \\
+% MI 498-499 (WI)   & 87  & 21:10 \\
+% IA excl 504/13/21 & 100 & 21:30 \\
+% MN 5670           & 134 & 21:45 \\
+% ND 5819           & 132 & 21:45 \\
+% ND 5820           & 135 & 21:45 \\
+% Barnsville, MN    & 132 & 21:45 \\
+% SD 5719           & 45  & 22:00 \\ \bottomrule
+% \end{tabular}
+
+
+\end{document}

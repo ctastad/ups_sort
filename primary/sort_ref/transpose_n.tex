@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage[letterpaper, landscape, margin=0.4in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{graphicx, tabularx, tikz, forest, adjustbox, float, placeins, subcaption, dblfloatfix, savetrees, booktabs, wrapfig}
+\renewcommand{\familydefault}{phv}
+\pagenumbering{gobble}
+\definecolor{blue}{HTML}{0072B2}
+\definecolor{purple}{HTML}{8b4789}
+\definecolor{yellow}{HTML}{F0E442}
+\definecolor{orange}{HTML}{E69F00}
+\definecolor{grey}{HTML}{999999}
+\definecolor{red}{HTML}{D55E00}
+\definecolor{green}{HTML}{009E73}
+\begin{document}
+
+\Large
+\begin{tabular}[t]{llllllll}
+\multicolumn{8}{c}{\textbf{Night Sort}}                                          \\ 
+\toprule
+ND 5652    & \cellcolor{green}  & 5501 & \cellcolor{yellow} & 5591 & \cellcolor{yellow} & 5641 & \cellcolor{yellow} \\
+ND 582/5/7 & \cellcolor{blue}   & 5502 & \cellcolor{purple} & 5592 & \cellcolor{yellow} & 5651 & \cellcolor{blue}   \\
+ND         & \cellcolor{grey}   & 5504 & \cellcolor{yellow} & 5599 & \cellcolor{orange} & 5652 & \cellcolor{green}  \\
+CAN        & \cellcolor{blue}   & 5519 & \cellcolor{grey}   & 5600 & \cellcolor{blue}   & 5653 & \cellcolor{green}  \\
+MT         & \cellcolor{grey}   & 5530 & \cellcolor{purple} & 5601 & \cellcolor{blue}   & 5660 & \cellcolor{green}  \\
+SD         & \cellcolor{purple} & 5534 & \cellcolor{purple} & 5610 & \cellcolor{blue}   & 5661 & \cellcolor{green}  \\
+           &                    & 5549 & \cellcolor{red}    & 5620 & \cellcolor{yellow} & 5670 & \cellcolor{blue}   \\
+           &                    & 5570 & \cellcolor{green}  & 5621 & \cellcolor{purple} & 5819 & \cellcolor{blue}   \\
+           &                    & 5571 & \cellcolor{green}  & 5622 & \cellcolor{blue}   & 5820 & \cellcolor{blue}   \\
+           &                    & 5580 & \cellcolor{green}  & 5630 & \cellcolor{blue}   &      &                    \\
+           &                    & 5590 & \cellcolor{yellow} & 5640 & \cellcolor{blue}   &      &                    \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\large
+\begin{tabular}[t]{@{}ll|l|l@{}}
+\multicolumn{4}{c}{\textbf{Twilight INTL}}                               \\ 
+\toprule
+S    & G                  & 3                & 2                \\ \midrule
+AB   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+BC   & \cellcolor{yellow} &                  & \cellcolor{blue} \\
+INTL & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+MB   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+MEX  & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+NB   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+NL   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+NS   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+ON   & \cellcolor{purple} &                  & \cellcolor{blue} \\
+PE   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+PRI  & \cellcolor{orange} & \cellcolor{blue} & \cellcolor{blue} \\
+QC   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+SK   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\Large
+\begin{tabular}[t]{@{}lll@{}}
+\multicolumn{3}{c}{\textbf{Hots}}                                          \\ 
+\toprule
+S                 & D   & T     \\ \midrule
+WI 530-543        & 87  & 21:10 \\
+WI 549            & 87  & 21:10 \\
+MI 498-499 (WI)   & 87  & 21:10 \\
+IA excl 504/13/21 & 100 & 21:30 \\
+MN 5670           & 134 & 21:45 \\
+ND 5819           & 132 & 21:45 \\
+ND 5820           & 135 & 21:45 \\
+Barnsville, MN    & 132 & 21:45 \\
+SD 5719           & 45  & 22:00 \\ \bottomrule
+\end{tabular}
+\vspace{10ex}
+
+\Large
+\begin{tabular}[t]{llllllll}
+\multicolumn{8}{c}{\textbf{Night Sort}}                                          \\ 
+\toprule
+ND 5652    & \cellcolor{green}  & 5501 & \cellcolor{yellow} & 5591 & \cellcolor{yellow} & 5641 & \cellcolor{yellow} \\
+ND 582/5/7 & \cellcolor{blue}   & 5502 & \cellcolor{purple} & 5592 & \cellcolor{yellow} & 5651 & \cellcolor{blue}   \\
+ND         & \cellcolor{grey}   & 5504 & \cellcolor{yellow} & 5599 & \cellcolor{orange} & 5652 & \cellcolor{green}  \\
+CAN        & \cellcolor{blue}   & 5519 & \cellcolor{grey}   & 5600 & \cellcolor{blue}   & 5653 & \cellcolor{green}  \\
+MT         & \cellcolor{grey}   & 5530 & \cellcolor{purple} & 5601 & \cellcolor{blue}   & 5660 & \cellcolor{green}  \\
+SD         & \cellcolor{purple} & 5534 & \cellcolor{purple} & 5610 & \cellcolor{blue}   & 5661 & \cellcolor{green}  \\
+           &                    & 5549 & \cellcolor{red}    & 5620 & \cellcolor{yellow} & 5670 & \cellcolor{blue}   \\
+           &                    & 5570 & \cellcolor{green}  & 5621 & \cellcolor{purple} & 5819 & \cellcolor{blue}   \\
+           &                    & 5571 & \cellcolor{green}  & 5622 & \cellcolor{blue}   & 5820 & \cellcolor{blue}   \\
+           &                    & 5580 & \cellcolor{green}  & 5630 & \cellcolor{blue}   &      &                    \\
+           &                    & 5590 & \cellcolor{yellow} & 5640 & \cellcolor{blue}   &      &                    \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\large
+\begin{tabular}[t]{@{}ll|l|l@{}}
+\multicolumn{4}{c}{\textbf{Twilight INTL}}                               \\ 
+\toprule
+S    & G                  & 3                & 2                \\ \midrule
+AB   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+BC   & \cellcolor{yellow} &                  & \cellcolor{blue} \\
+INTL & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+MB   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+MEX  & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+NB   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+NL   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+NS   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+ON   & \cellcolor{purple} &                  & \cellcolor{blue} \\
+PE   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+PRI  & \cellcolor{orange} & \cellcolor{blue} & \cellcolor{blue} \\
+QC   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+SK   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\Large
+\begin{tabular}[t]{@{}lll@{}}
+\multicolumn{3}{c}{\textbf{Hots}}                                          \\ 
+\toprule
+S                 & D   & T     \\ \midrule
+WI 530-543        & 87  & 21:10 \\
+WI 549            & 87  & 21:10 \\
+MI 498-499 (WI)   & 87  & 21:10 \\
+IA excl 504/13/21 & 100 & 21:30 \\
+MN 5670           & 134 & 21:45 \\
+ND 5819           & 132 & 21:45 \\
+ND 5820           & 135 & 21:45 \\
+Barnsville, MN    & 132 & 21:45 \\
+SD 5719           & 45  & 22:00 \\ \bottomrule
+\end{tabular}
+
+
+\end{document}

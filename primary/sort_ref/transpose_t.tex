@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[letterpaper, landscape, margin=0.3in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{graphicx, tabularx, tikz, forest, adjustbox, float, placeins, subcaption, dblfloatfix, savetrees, booktabs, wrapfig}
+\renewcommand{\familydefault}{phv}
+\pagenumbering{gobble}
+\definecolor{blue}{HTML}{0072B2}
+\definecolor{purple}{HTML}{8b4789}
+\definecolor{yellow}{HTML}{F0E442}
+\definecolor{orange}{HTML}{E69F00}
+\definecolor{grey}{HTML}{999999}
+\definecolor{red}{HTML}{D55E00}
+\definecolor{green}{HTML}{009E73}
+\begin{document}
+\small{}
+\begin{table}
+\large
+\caption*{\textbf{\Large{Twilight US States}}}
+\begin{tabular}{@{}llllllllllllllllllllllllll@{}}
+\toprule
+ & AK                 & AL               & AR                 & AZ                 & CA               & CO                 & CT                 & DC                 & DE                 & FL                 & GA                 & HI                & IA                 & ID*              & IL                 & IN                 & KS                 & KY                 & LA                 & MA                 & MD                 & ME                 & MI*               & MO                 & MS                 \\ \midrule
+G & \cellcolor{orange} & \cellcolor{grey} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{green}  & \cellcolor{yellow} & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{grey} & \cellcolor{orange} & \cellcolor{yellow} & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{purple} & \cellcolor{orange} \\ \hline
+3 & \cellcolor{blue}   & \cellcolor{grey} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{green}  & \cellcolor{yellow} & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{orange} & \cellcolor{yellow} & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{purple} & \cellcolor{orange} \\ \hline
+2 & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{orange} & \cellcolor{yellow} & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{purple} & \cellcolor{blue}   \\
+\toprule
+ & MT                 & NC               & ND*                & NE*                & NH               & NJ*                & NM                 & NV                 & NY*                & OH                 & OK                 & OR                & PA*                & RI               & SC                 & SD                 & TN                 & TX*                & UT                 & VA                 & VT                 & WA                 & WI                & WV                 & WY*                \\
+G & \cellcolor{grey}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{red}    & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{red}    & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{green} & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{grey}   & \cellcolor{purple} & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{green} & \cellcolor{orange} & \cellcolor{green}  \\ \hline
+3 & \cellcolor{grey}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{red}    & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{grey}   & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{orange} & \cellcolor{blue}  \\ \hline
+2 & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue}  & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{blue}   & \cellcolor{blue}   \\ \bottomrule
+\end{tabular}
+% \clearpage
+\vspace{1ex}
+
+% \small{}
+\normalsize{}
+\begin{tabular}{@{}llllllllllllll@{}}
+\toprule
+ & ID 835/8           & ID 836/7           & MI 498-499         & ND 5652           & NE 692             & NJ 80-84           & NY 100-119       & NY 124-127       & PA 150-168         & PA 174-178         & TX 768/9,89,97-99  & WY 821/4/7       & WY 828           \\ \midrule
+G & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{green} & \cellcolor{purple} & \cellcolor{yellow} & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{purple} & \cellcolor{grey} & \cellcolor{grey} \\ \hline
+3 & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{green} & \cellcolor{purple} & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{grey} & \cellcolor{blue} \\ \hline
+2 & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{green} & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\ \bottomrule
+\end{tabular}
+\vspace{1ex}
+
+% \normalsize{}
+% \begin{tabular}{@{}lllllllllll@{}}
+% \toprule
+% \textbf{Hots} & S & WI 530-543 & WI 549 & MI 498-499 (WI) & IA excl 504/13/21 & MN 5670 & ND 5819 & ND 5820 & Barnsville, MN & SD 5719 \\ \midrule
+%      & D & 87         & 87     & 87              & 100               & 134     & 132     & 135     & 132            & 45      \\
+%      & T & 21:10      & 21:10  & 21:10           & 21:30             & 21:45   & 21:45   & 21:45   & 21:45          & 22:00   \\ \bottomrule
+% \end{tabular}
+\end{table}
+\vspace{10ex}
+
+
+\begin{table}
+\large
+\caption*{\textbf{\Large{Twilight US States}}}
+\begin{tabular}{@{}llllllllllllllllllllllllll@{}}
+\toprule
+ & AK                 & AL               & AR                 & AZ                 & CA               & CO                 & CT                 & DC                 & DE                 & FL                 & GA                 & HI                & IA                 & ID*              & IL                 & IN                 & KS                 & KY                 & LA                 & MA                 & MD                 & ME                 & MI*               & MO                 & MS                 \\ \midrule
+G & \cellcolor{orange} & \cellcolor{grey} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{green}  & \cellcolor{yellow} & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{grey} & \cellcolor{orange} & \cellcolor{yellow} & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{purple} & \cellcolor{orange} \\ \hline
+3 & \cellcolor{blue}   & \cellcolor{grey} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{green}  & \cellcolor{yellow} & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{orange} & \cellcolor{yellow} & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{purple} & \cellcolor{orange} \\ \hline
+2 & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{orange} & \cellcolor{yellow} & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{purple} & \cellcolor{blue}   \\
+\toprule
+ & MT                 & NC               & ND*                & NE*                & NH               & NJ*                & NM                 & NV                 & NY*                & OH                 & OK                 & OR                & PA*                & RI               & SC                 & SD                 & TN                 & TX*                & UT                 & VA                 & VT                 & WA                 & WI                & WV                 & WY*                \\
+G & \cellcolor{grey}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{red}    & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{red}    & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{green} & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{grey}   & \cellcolor{purple} & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{green} & \cellcolor{orange} & \cellcolor{green}  \\ \hline
+3 & \cellcolor{grey}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{red}    & \cellcolor{purple} & \cellcolor{orange} & \cellcolor{blue}  & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{grey}   & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{orange} & \cellcolor{blue}  \\ \hline
+2 & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue}  & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue}   & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{green} & \cellcolor{blue}   & \cellcolor{blue}   \\ \bottomrule
+\end{tabular}
+% \clearpage
+\vspace{1ex}
+
+\normalsize{}
+\begin{tabular}{@{}llllllllllllll@{}}
+\toprule
+ & ID 835/8           & ID 836/7           & MI 498-499         & ND 5652           & NE 692             & NJ 80-84           & NY 100-119       & NY 124-127       & PA 150-168         & PA 174-178         & TX 768/9,89,97-99  & WY 821/4/7       & WY 828           \\ \midrule
+G & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{green} & \cellcolor{purple} & \cellcolor{yellow} & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{purple} & \cellcolor{grey} & \cellcolor{grey} \\ \hline
+3 & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{green} & \cellcolor{purple} & \cellcolor{yellow} & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{grey} & \cellcolor{blue} \\ \hline
+2 & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{orange} & \cellcolor{green} & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\ \bottomrule
+\end{tabular}
+\vspace{1ex}
+
+% \normalsize{}
+% \begin{tabular}{@{}lllllllllll@{}}
+% \toprule
+% \textbf{Hots} & S & WI 530-543 & WI 549 & MI 498-499 (WI) & IA excl 504/13/21 & MN 5670 & ND 5819 & ND 5820 & Barnsville, MN & SD 5719 \\ \midrule
+%      & D & 87         & 87     & 87              & 100               & 134     & 132     & 135     & 132            & 45      \\
+%      & T & 21:10      & 21:10  & 21:10           & 21:30             & 21:45   & 21:45   & 21:45   & 21:45          & 22:00   \\ \bottomrule
+% \end{tabular}
+\end{table}
+
+\end{document}

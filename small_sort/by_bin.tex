@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage[letterpaper, margin=0.7in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{graphicx, booktabs}
+\renewcommand{\familydefault}{phv}
+% \SetWatermarkText{DRAFT}
+% \SetWatermarkScale{7}
+\pagenumbering{gobble}
+\definecolor{blue}{HTML}{0000FF}
+\definecolor{yellow}{HTML}{FFFF00}
+\definecolor{red}{HTML}{FF0000}
+\begin{document}
+
+\begin{tabular}[t]{ll|l|l}
+\multicolumn{4}{c}{\textbf{Bin1 Middle}} \\
+\toprule
+S                    & G                & 3                & 2                \\ \midrule
+AR                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red}  \\
+CA                   & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  \\
+CO                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red}  \\
+HI                   & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  \\
+IA                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\
+ID*                  & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  \\
+MT                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red}  \\
+ND*                  & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\
+NM                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red}  \\
+OK                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red}  \\
+OR                   & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  \\
+SD                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\
+TX*                  & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red}  \\
+UT                   & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  \\
+WA                   & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  \\
+WI                   & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} \\
+WY*                  & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\begin{tabular}[t]{ll|l|l}
+\multicolumn{4}{c}{\textbf{Bin2 Bottom}} \\
+\toprule
+S   & G                  & 3                  & 2                  \\ \midrule
+DC  & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red}    \\
+DE  & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red}    \\
+MD  & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red}    \\
+MI* & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{yellow} \\
+VA  & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red}    \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\begin{tabular}[t]{ll|l|l}
+\multicolumn{4}{c}{\textbf{Bin3 Top}} \\
+\toprule
+S  & G               & 3               & 2               \\ \midrule
+AK & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+AL & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+AZ & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+CT & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+FL & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+GA & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+IL & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+IN & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+KS & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+KY & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+LA & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+MA & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+ME & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+MO & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+MS & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+NC & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+NE & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+NH & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+NJ & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+NV & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+NY & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+OH & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+PA & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+RI & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+SC & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+TN & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+VT & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\
+WV & \cellcolor{red} & \cellcolor{red} & \cellcolor{red} \\ \bottomrule
+\end{tabular}
+\hspace{10em}
+\begin{tabular}[t]{c|c}
+    Bin 1 & \cellcolor{blue} \\
+    Bin 2 & \cellcolor{yellow} \\
+    Bin 3 & \cellcolor{red}
+\end{tabular}
+\vspace{5ex}
+
+\begin{tabular}[t]{ll}
+\multicolumn{2}{c}{\textbf{*Exceptions}} \\
+\toprule
+S                 & .    \\ \midrule
+CAN BC          & \cellcolor{blue}   \\
+ID 836-837      & \cellcolor{red}    \\
+MI 498-499      & \cellcolor{red}    \\
+ND 5652         & \cellcolor{yellow} \\
+TX3 768/9, 89 & \cellcolor{red}    \\
+TX3 797-799   & \cellcolor{red}    \\
+WY 828-831      & \cellcolor{red}    \\
+WY3 821/4/7   & \cellcolor{blue}  \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+% \centering
+\begin{tabular}[t]{ll}
+\multicolumn{2}{c}{\textbf{Minn}} \\
+\toprule
+SLIC                 & .    \\ \midrule
+MN 5519 & \cellcolor{blue}   \\
+MN 5549 & \cellcolor{blue}   \\
+MN      & \cellcolor{yellow} \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\begin{tabular}[t]{ll}
+\multicolumn{2}{c}{\textbf{INTL}} \\
+\toprule
+S                 & .    \\ \midrule
+CAN* & \cellcolor{red}  \\
+MEX  & \cellcolor{blue} \\
+PRI  & \cellcolor{red} \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\begin{tabular}[t]{l|ll|l|l}
+\multicolumn{5}{c}{\textbf{Flex}} \\
+\toprule
+SLIC    & CITY  & .                   & .                   &    .             \\ \midrule
+MN 5519 & STPMN & \cellcolor{blue}   & \cellcolor{red}    &                 \\
+MN 5549 & MINMN & \cellcolor{blue}   & \cellcolor{yellow} & \cellcolor{red} \\
+MN 5580 & DULMN & \cellcolor{yellow} & \cellcolor{red}    &                 \\
+MN 5590 & ROCMN & \cellcolor{yellow} & \cellcolor{red}    &                 \\
+MN 5599 & MGRMN & \cellcolor{yellow} & \cellcolor{red}    &                 \\ \bottomrule
+\end{tabular}
+
+\vspace{25ex}
+Chris Tastad - \today
+
+\end{document}

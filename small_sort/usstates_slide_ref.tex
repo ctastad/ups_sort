@@ -1,0 +1,33 @@
+\documentclass[100pt]{article}
+\usepackage[letterpaper, landscape, tmargin=0.7in, lmargin=0.2in, rmargin=0.2in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{graphicx, booktabs, adjustbox, moresize, anyfontsize, inconsolata}
+\renewcommand{\familydefault}{\ttdefault}
+\pagenumbering{gobble}
+\definecolor{blue}{HTML}{0000FF}
+\definecolor{yellow}{HTML}{FFFF00}
+\definecolor{red}{HTML}{FF0000}
+\begin{document}
+
+\fontsize{34}{40}\selectfont
+\centering
+% \HUGE
+\begin{adjustbox}{valign=t}
+\begin{tabular}{@{}ll|l|l||ll|l|l||ll|l|l||ll|l|l||ll|l|l@{}}
+\multicolumn{20}{c}{US States} \\
+\toprule
+S  & G                  & 3                  & 2               & S   & G                & 3                & 2                & S   & G                  & 3                  & 2                  & S  & G                & 3                & 2               & S   & G                  & 3                  & 2                \\ \midrule
+AK & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red} & GA  & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red}  & MD  & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red}    & NJ & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red} & SD  & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue} \\
+AL & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red} & HI  & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  & ME  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}    & NM & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red} & TN  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}  \\
+AR & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{red} & IA  & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{blue} & MI* & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{yellow} & NV & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red} & TX* & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{red}  \\
+AZ & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red} & ID* & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red}  & MO  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}    & NY & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red} & UT  & \cellcolor{blue}   & \cellcolor{red}    & \cellcolor{red}  \\
+CA & \cellcolor{blue}   & \cellcolor{red}    & \cellcolor{red} & IL  & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red}  & MS  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}    & OH & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red} & VA  & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red}  \\
+CO & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{red} & IN  & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red}  & MT  & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{red}    & OK & \cellcolor{blue} & \cellcolor{blue} & \cellcolor{red} & VT  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}  \\
+CT & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red} & KS  & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red}  & NC  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}    & OR & \cellcolor{blue} & \cellcolor{red}  & \cellcolor{red} & WA  & \cellcolor{blue}   & \cellcolor{red}    & \cellcolor{red}  \\
+DC & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red} & KY  & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red}  & ND* & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   & PA & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red} & WI  & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue} \\
+DE & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{red} & LA  & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red}  & NE  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}    & RI & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red} & WV  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}  \\
+FL & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red} & MA  & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red}  & NH  & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{red}    & SC & \cellcolor{red}  & \cellcolor{red}  & \cellcolor{red} & WY* & \cellcolor{blue}   & \cellcolor{red}    & \cellcolor{red}  \\ \bottomrule
+\end{tabular}
+\end{adjustbox}
+
+\end{document}

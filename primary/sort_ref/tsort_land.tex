@@ -1,0 +1,168 @@
+\documentclass[twocolumn]{article}
+\usepackage[letterpaper, landscape, margin=0.5in]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{graphicx, tabularx, tikz, forest, adjustbox, float, placeins, subcaption, dblfloatfix, savetrees, booktabs, wrapfig, inconsolata}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+% \usepackage[firstpage]{draftwatermark}
+\graphicspath{ {/home/chris/} }
+\renewcommand{\familydefault}{phv}
+\newenvironment{tttabular}[1]%
+{\ttfamily \begin{tabular}{#1}}%
+{\end{tabular}}
+% \SetWatermarkText{DRAFT}
+% \SetWatermarkScale{7}
+\pagenumbering{gobble}
+\definecolor{blue}{HTML}{0072B2}
+\definecolor{purple}{HTML}{8b4789}
+\definecolor{yellow}{HTML}{F0E442}
+\definecolor{orange}{HTML}{E69F00}
+\definecolor{grey}{HTML}{999999}
+\definecolor{red}{HTML}{D55E00}
+\definecolor{green}{HTML}{009E73}
+\begin{document}
+\begin{adjustbox}{valign=t, max totalheight=\textheight}
+\Large{}
+\centering
+\begin{tttabular}{@{}>{\bfseries}lll|l|ll >{\bfseries}lll|l|l@{}}
+\multicolumn{10}{c}{\textbf{US States}} \\
+\toprule
+  & S          & G                  & 3                  & 2                  &  &   & S           & G                  & 3                  & 2                  \\ \midrule
+A & AK         & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   &  &   & NE 692      & \cellcolor{purple} & \cellcolor{purple} & \cellcolor{purple} \\
+  & AL         & \cellcolor{grey}   & \cellcolor{grey}   & \cellcolor{blue}   &  &   & NE          & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{yellow} \\
+  & AR         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   &  &   & NH          & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & AZ         & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   &  &   & NJ 80-84    & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{blue}   \\
+C & CA         & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   &  &   & NJ          & \cellcolor{red}    & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & CO         & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{blue}   &  &   & NM          & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{blue}   \\
+  & CT         & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   &  &   & NV          & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   \\
+D & DC         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   &  &   & NY 100-119  & \cellcolor{red}    & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & DE         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   &  &   & NY 124-127  & \cellcolor{red}    & \cellcolor{blue}   & \cellcolor{blue}   \\
+F & FL         & \cellcolor{green}  & \cellcolor{green}  & \cellcolor{blue}   &  &   & NY          & \cellcolor{red}    & \cellcolor{red}    & \cellcolor{blue}   \\
+G & GA         & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{blue}   &  & O & OH          & \cellcolor{purple} & \cellcolor{purple} & \cellcolor{purple} \\
+H & HI         & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   &  &   & OK          & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   \\
+I & IA         & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{yellow} &  &   & OR          & \cellcolor{green}  & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & ID 835/8   & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{blue}   &  & P & PA 150-168  & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{yellow} \\
+  & ID 836/7   & \cellcolor{orange} & \cellcolor{blue}   & \cellcolor{blue}   &  &   & PA 174-178  & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   \\
+  & ID         & \cellcolor{grey}   & \cellcolor{blue}   & \cellcolor{blue}   &  &   & PA          & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{blue}   \\
+  & IL         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{orange} &  & R & RI          & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & IN         & \cellcolor{yellow} & \cellcolor{yellow} & \cellcolor{yellow} &  & S & SC          & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   \\
+K & KS         & \cellcolor{purple} & \cellcolor{purple} & \cellcolor{purple} &  &   & SD          & \cellcolor{purple} & \cellcolor{purple} & \cellcolor{purple} \\
+  & KY         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{orange} &  & T & TN          & \cellcolor{grey}   & \cellcolor{grey}   & \cellcolor{blue}   \\
+L & LA         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   &  &   & TX 768/9,89 & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue}   \\
+M & MA         & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   &  &   & TX 797-99   & \cellcolor{purple} & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & MD         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   &  &   & TX          & \cellcolor{purple} & \cellcolor{purple} & \cellcolor{blue}   \\
+  & ME         & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   &  & U & UT          & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & MI 498-499 & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{orange} &  & V & VA          & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   \\
+  & MI         & \cellcolor{green}  & \cellcolor{green}  & \cellcolor{green}  &  &   & VT          & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & MO         & \cellcolor{purple} & \cellcolor{purple} & \cellcolor{purple} &  & W & WA          & \cellcolor{yellow} & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & MS         & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   &  &   & WI          & \cellcolor{green}  & \cellcolor{green}  & \cellcolor{green}  \\
+  & MT         & \cellcolor{grey}   & \cellcolor{grey}   & \cellcolor{blue}   &  &   & WV          & \cellcolor{orange} & \cellcolor{orange} & \cellcolor{blue}   \\
+N & NC         & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   &  &   & WY 821/4/7  & \cellcolor{grey}   & \cellcolor{grey}   & \cellcolor{blue}   \\
+  & ND 5652    & \cellcolor{green}  & \cellcolor{green}  & \cellcolor{green}  &  &   & WY 828      & \cellcolor{grey}   & \cellcolor{blue}   & \cellcolor{blue}   \\
+  & ND         & \cellcolor{blue}   & \cellcolor{blue}   & \cellcolor{blue}   &  &   & WY          & \cellcolor{green}  & \cellcolor{blue}  & \cellcolor{blue}   \\
+ \bottomrule
+\end{tttabular}
+\end{adjustbox}
+\vspace{1ex}
+
+\large{}
+\centering
+\begin{forest}
+for tree={edge={->}}
+[\textbf{MN}
+   [5\textbf{\underline{5}}XX
+      [55\textbf{\underline{0}}
+         [550\textbf{\underline{2}}
+            [,circle,draw,fill=purple,edge label={node[midway,left]{Y}}]
+            [,circle,draw,fill=yellow,edge label={node[midway,right]{N}}]]]
+      [55\textbf{\underline{1}}
+         [,circle,draw,fill=grey]]
+      [55\textbf{\underline{3}}
+         [,circle,draw,fill=purple]]
+      [55\textbf{\underline{4}}
+         [,circle,draw,fill=red]]
+      [55(\textbf{\underline{7/8}})
+         [,circle,draw,fill=green]]
+      [55\textbf{\underline{9}}
+         [559(\textbf{\underline{0/1/2}})
+            [,circle,draw,fill=yellow,label=Y]
+            [559\textbf{\underline{9}},edge label={node[midway,right]{N}}
+               [,circle,draw,fill=grey]]]]]
+   [5\textbf{\underline{6}}XX
+      [56\textbf{\underline{52}}
+         [,circle,draw,fill=green,label=Y]
+         [56\textbf{\underline{6}}X,label=N
+            [,circle,draw,fill=green,edge label={node[midway,left]{Y}}]
+            [,circle,draw,fill=blue,edge label={node[midway,right]{N}}]]]]
+]
+\end{forest}
+\vspace{1ex}
+
+\large{}
+\begin{tabular}[t]{llllll}
+\multicolumn{6}{c}{\textbf{Minnesota SLICs}}                                          \\ 
+\toprule
+5501 & \cellcolor{yellow} & 5591 & \cellcolor{yellow} & 5641 & \cellcolor{blue}  \\
+5502 & \cellcolor{purple} & 5592 & \cellcolor{yellow} & 5651 & \cellcolor{blue}  \\
+5504 & \cellcolor{yellow} & 5599 & \cellcolor{grey}   & 5652 & \cellcolor{green} \\
+5519 & \cellcolor{grey}   & 5600 & \cellcolor{blue}   & 5653 & \cellcolor{blue}  \\
+5530 & \cellcolor{purple} & 5601 & \cellcolor{blue}   & 5660 & \cellcolor{green} \\
+5534 & \cellcolor{purple} & 5610 & \cellcolor{blue}   & 5661 & \cellcolor{green} \\
+5549 & \cellcolor{red}    & 5620 & \cellcolor{blue}   & 5670 & \cellcolor{blue}  \\
+5570 & \cellcolor{green}  & 5621 & \cellcolor{blue}   & 5819 & \cellcolor{blue}  \\
+5571 & \cellcolor{green}  & 5622 & \cellcolor{blue}   & 5820 & \cellcolor{blue}  \\
+5580 & \cellcolor{green}  & 5630 & \cellcolor{blue}   &      &                   \\
+5590 & \cellcolor{yellow} & 5640 & \cellcolor{blue}   &      &                  
+\end{tabular}
+\hspace{1em}
+\begin{tabular}[t]{@{}lll@{}}
+\multicolumn{3}{c}{\textbf{Hots}}                                          \\ 
+\toprule
+S                 & D   & T     \\ \midrule
+WI 530-543        & 87  & 21:10 \\
+WI 549            & 87  & 21:10 \\
+MI 498-499 (WI)   & 87  & 21:10 \\
+IA excl 504/13/21 & 100 & 21:30 \\
+MN 5670           & 134 & 21:45 \\
+ND 5819           & 132 & 21:45 \\
+ND 5820           & 135 & 21:45 \\
+Barnsville, MN    & 132 & 21:45 \\
+SD 5719           & 45  & 22:00 \\ \bottomrule
+\end{tabular}
+\vspace{2ex}
+
+\small{}
+\begin{tabular}[t]{@{}ll|l|l@{}}
+\multicolumn{4}{c}{\textbf{International}}                               \\ 
+\toprule
+S    & G                  & 3                & 2                \\ \midrule
+AB   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+BC   & \cellcolor{yellow} &                  & \cellcolor{blue} \\
+INTL & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+MB   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+MEX  & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\
+NB   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+NL   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+NS   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+ON   & \cellcolor{purple} &                  & \cellcolor{blue} \\
+PE   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+PRI  & \cellcolor{orange} & \cellcolor{blue} & \cellcolor{blue} \\
+QC   & \cellcolor{red}    &                  & \cellcolor{blue} \\
+SK   & \cellcolor{blue}   & \cellcolor{blue} & \cellcolor{blue} \\ \bottomrule
+\end{tabular}
+\hspace{1em}
+\large{}
+\begin{tabular}[t]{l}
+\tabitem Smalls = L16 x W16 x H7, 8lb or less  \\
+\\
+\tabitem Final 7 states = MN, ND, SD, WI, SAM  \\
+\\
+\tabitem Irregs = boxes $>$ 70lb, wood, metal, \\
+cylinders $>$ 45lb, odd shapes, not wrapped  \\
+\\
+\tabitem All next days (1) should be walked \\
+to Air Pull -- MN, ND, SD, IA, WI can be sent. \\
+\\
+\\
+-- Last updated \today -- \\
+\end{tabular}
+\end{document}
